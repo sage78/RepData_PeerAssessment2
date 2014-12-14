@@ -7,13 +7,28 @@ output:
 
 ## Synopsis
 
-Storms and other severe weather events can cause both public health and 
+Storms and other severe weather events cause both public health and 
 economic problems for communities and municipalities. This report is 
-based on U.S. National Oceanic and Atmospheric Administration's (NOAA) 
-storm database and it lists weather events with most harmful effects on
-population health and ones with greatest economic consequences 
-accross United States. Geographical variation has not been studied in this 
-report.
+based on data from U.S. National Oceanic and Atmospheric 
+Administration's (NOAA) storm database and lists weather events 
+with most harmful effects on population health and with greatest 
+economic consequences accross United States by using data collected 
+through 1995-2011. Geographical variation of the weather events 
+has not been studied in this report.
+
+As described in the Report chapter, the most harmful weather events  
+on population health across United States are excessive heat and 
+tornado. These both are included in top 3 reasons for fatalities 
+and injuries. Flash flood, flood, heat, lightning and tstm wind also
+appear in top 10 reasons for both fatalities and injuries.
+
+Weather events with greatest economic consequences 
+considering both crop and property damages are flood, 
+hurricane/typhoon and storm surge.
+
+This document includes Data Processing chapter, which describes 
+how the data was processed for analysis and Results chapter, which
+presents the results of the analysis.
 
 
 ## Data processing
@@ -188,7 +203,8 @@ ggplot(injuries,
 ### Total damages by event type
 
 Chart below decribes 10 event types with highest caused damages between 
-1995-2011 accross United States
+1995-2011 accross United States. Numbers include damages to both property 
+and crop.
 
 ```{r damageplot}
 ggplot(damages, 
